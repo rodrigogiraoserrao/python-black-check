@@ -12,7 +12,7 @@ inputs:
   line-length:
     description: 'The number of characters allowed per line.'
     required: false
-    default: 81
+    default: '81'
 outputs:
   output:
     description: 'The output of black.'
