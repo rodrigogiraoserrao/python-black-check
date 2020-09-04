@@ -1,6 +1,6 @@
-FROM python:3.8.1-alpine
+FROM python:3.8-slim-buster
 
-LABEL "maintainer" = "Rodrigo Girão Serrão <rodrigogiraoserrao@gmail.com>"
+LABEL "maintainer" = "Piotr Pawlaczek <info@pawlaczek.pl>"
 
 ADD requirements.txt /requirements.txt
 ADD entrypoint.sh /entrypoint.sh

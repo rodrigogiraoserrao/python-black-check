@@ -1,5 +1,5 @@
 # action.yaml
-name: 'Python Black Check'
+name: 'Python Blacken'
 description: 'Customisable GitHub action to use black to check Python code in your repository'
 branding:
   icon: 'code'
