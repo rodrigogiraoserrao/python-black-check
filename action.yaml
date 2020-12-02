@@ -13,6 +13,14 @@ inputs:
     description: 'The number of characters allowed per line.'
     required: false
     default: '81'
+  include:
+    description: 'A regular expression that matches files and directories that should be included on recursive searches.'
+    required: false
+    default: '\.pyi?$'
+  exclude:
+    description: 'A regular expression that matches files and directories that should be excluded on recursive searches.'
+    required: false
+    default: '/(\.direnv|\.eggs|\.git|\.hg|\.mypy_cache|\.nox|\.tox|\.venv|\.svn|_build|buck-out|build|dist)/'
 outputs:
   output:
     description: 'The output of black.'
@@ -23,3 +31,5 @@ runs:
   args:
     - ${{ inputs.line-length }}
     - ${{ inputs.path }}
+    - ${{ inputs.include }}
+    - ${{ inputs.exclude }}
