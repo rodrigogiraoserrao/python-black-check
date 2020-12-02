@@ -15,14 +15,14 @@ This tells `black` how long each line of Python code can be.
 **Default**: `81`, which is _different_ from `black`'s default of `88`.
 
 ## Include (optional)
-This tells `black` which files we should verify the format.
+This tells `black` which files we should verify the format of.
 
-**Default**: `\.pyi?$`, which is `black`'s default value if not informed.
+**Default**: `\.pyi?$`, which matches `black`'s default value.
 
 ## Exclude (optional)
 This tells `black` which files we should ignore.
 
-**Default**: `/(\.direnv|\.eggs|\.git|\.hg|\.mypy_cache|\.nox|\.tox|\.venv|\.svn|_build|buck-out|build|dist)/`, which is `black`'s default value if not informed.
+**Default**: `/(\.direnv|\.eggs|\.git|\.hg|\.mypy_cache|\.nox|\.tox|\.venv|\.svn|_build|buck-out|build|dist)/`, which matches `black`'s default value.
 
 # Example usage
 Include this in your `.github/workflows/main.yaml`:
