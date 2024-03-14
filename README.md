@@ -28,12 +28,12 @@ This tells `black` which files we should ignore.
 Include this in your `.github/workflows/main.yaml`:
 
 ```yaml
-uses: RojerGS/python-black-check@master
+uses: rodrigogiraoserrao/python-black-check@master
 ```
 or, if you want to override any of the defaults,
 
 ```yaml
-uses: RojerGS/python-black-check@master
+uses: rodrigogiraoserrao/python-black-check@master
 with:
   line-length: '81'
   path: '.'
